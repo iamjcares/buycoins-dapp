@@ -4,7 +4,7 @@ function isInstalled() {
 }
 function connectBrowser(mintBox, totalSupply, errView) {
     ethereum.enable().catch(function (reason) {
-        errView.innerHTML = reason.message;
+        errView.innerHTML = "Error: User denied account authorization";
     }).then(function () {
         if (ethereum.networkVersion === "4") {
             address = ethereum.selectedAddress;
@@ -57,6 +57,8 @@ function connectBrowser(mintBox, totalSupply, errView) {
                 } else {
                     error.innerHTML = "Please enter a valid quantity";
                 }
+            }).catch(function (reason) {
+                error.innerHTML = "Error: User denied account authorization";
             });
         } else {
             error.innerHTML = "YOu're yet to be connected to a network";
