@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Olalekan Johnson Token Minter</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="index.css" rel="stylesheet" />
+    </head>
+    <body>
+
+        <div class="container">
+            <div id="header">Token Minter for: <br> <strong>0xc66b254dc52a782742b81a067cb1f2b1b85fd0b0</strong></div>
+            <h4>Total Quantity: <span id="totalSupply"></span></h4>
+            <p id="error"></p>
+            <p id="info"></p>
+            <div class="mintBox">
+                <p><input name="quantity" id="quantity" placeholder="Enter the number of token to mint" /></p>
+                <p><input id="mint" type="submit" value="Mint" /></p>
+            </div>
+        </div>
+        <script src="abi.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>

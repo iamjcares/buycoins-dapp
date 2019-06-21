@@ -1,0 +1,42 @@
+html,
+body {
+    height: 100%;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff8e7;
+}
+
+.container{
+    width: 300px;
+    height: 200px;
+    text-align: center;
+}
+
+.header{
+    text-align: center;
+}
+
+.mintBox {
+    display: none;
+}
+
+input{
+    border: 0;
+    padding: 5px;
+}
+
+#error{
+    color: #C00;
+}
+#info{
+    color: #0C0;
+}
+
+
+#mint{
+    background-color: #3875d7;
+    width: 50px;
+}
